@@ -24,7 +24,7 @@
 import UIKit
 import Hype
 
-class ContactViewController:  UITableViewController, HYPStateObserver, HYPNetworkObserver, HYPMessageObserver{
+class ContactViewController:  UITableViewController, HYPStateObserver, HYPNetworkObserver, HYPMessageObserver {
  
     // The stores object keeps track of message storage associated with each instance (peer)
     var stores = [String: Store]()
