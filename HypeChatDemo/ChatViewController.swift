@@ -1,13 +1,14 @@
 //
-// The MIT License (MIT)
-// Copyright (c) 2016 Hype Labs Ltd
+// MIT License
+//
+// Copyright (C) 2018 HypeLabs Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-// of the Software, and to permit persons to whom the Software is furnished to do
-// so, subject to the following conditions:
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
 //
 // The above copyright notice and this permission notice shall be included in all
 // copies or substantial portions of the Software.
@@ -49,14 +50,14 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
         
         let text: String = textView.text!
         
-        if (text.characters.count ) > 0 {
+        if (text.count) > 0 {
             
             // When sending content there must be some sort of protocol that both parties
             // understand. In this case, we simply send the text encoded in UTF8. The data
             // must be decoded when received, using the same encoding.
             let data: Data? = text.data(using: String.Encoding.utf8)
             
-            let message: HYPMessage? = HYP.instance().send(data, to: store?.instance)
+            let message: HYPMessage? = HYP.send(data, to: store?.instance)
             
             // Clear the input view
             textView.text = ""
@@ -130,7 +131,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
         textView.resignFirstResponder()
     }
 
-    func keyboardWillShow(notification: NSNotification) {
+    @objc func keyboardWillShow(notification: NSNotification) {
         
         let info = notification.userInfo!
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
@@ -142,7 +143,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
         })
     }
     
-    func keyboardWillHide(_ notification: Notification) {
+    @objc func keyboardWillHide(_ notification: Notification) {
         UIView.animate(withDuration: 0.3, animations: {() -> Void in
             var f: CGRect = self.view.frame
             f.origin.y = 0.0
