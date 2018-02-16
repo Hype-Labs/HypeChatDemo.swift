@@ -156,7 +156,7 @@ class ContactViewController:  UITableViewController, HYPStateObserver, HYPNetwor
         NSLog("Hype delivered a message: %f", progress)
     }
     
-    func hypeDidRequestAccessToken(_ userIdentifier:Int) -> String
+    func hypeDidRequestAccessToken(withUserIdentifier userIdentifier: UInt) -> String!
     {
         return "{{access_token}}"
     }
