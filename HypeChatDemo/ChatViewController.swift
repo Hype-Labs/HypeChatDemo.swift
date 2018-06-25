@@ -27,6 +27,8 @@ import Hype
 
 class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate{
     
+    @IBOutlet weak var instanceAnnouncement: UILabel!
+    
     private var _store:Store?
     
     var store: Store? {
@@ -37,7 +39,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
         }
         
         get {
-            return _store;
+            return _store
         }
     }
     
@@ -63,7 +65,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
             textView.text = ""
             
             // Adding the message to the store updates the table view
-            store?.add(message!)
+            store?.add(message!, isMessageReceived: false)
         }
     }
     
@@ -79,6 +81,12 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        if (store?.instance.announcement != nil) {
+            instanceAnnouncement.text = String(data: (store?.instance.announcement)!, encoding: .utf8)
+        }
+        else {
+            instanceAnnouncement.text = ""
+        }
         messageDisplay.dataSource = self
     }
    
