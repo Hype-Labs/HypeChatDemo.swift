@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25334A1320E158E000386DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25334A1120E158E000386DC0 /* Main.storyboard */; };
 		2562806F200E0D64002FE630 /* Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2562806E200E0D64002FE630 /* Hype.framework */; };
 		25628070200E0D64002FE630 /* Hype.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2562806E200E0D64002FE630 /* Hype.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25B5135F20E12CB100EA17FE /* hypelabs_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B5135E20E12CB100EA17FE /* hypelabs_logo.png */; };
 		9CA948821EB33D9B00E0CE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA948811EB33D9B00E0CE7B /* AppDelegate.swift */; };
-		9CA948871EB33D9B00E0CE7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA948851EB33D9B00E0CE7B /* Main.storyboard */; };
 		9CA948891EB33D9B00E0CE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA948881EB33D9B00E0CE7B /* Assets.xcassets */; };
 		9CA9488C1EB33D9B00E0CE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9488A1EB33D9B00E0CE7B /* LaunchScreen.storyboard */; };
 		9CA948971EB33D9B00E0CE7B /* HypeChatDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA948961EB33D9B00E0CE7B /* HypeChatDemoTests.swift */; };
@@ -55,10 +56,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		25334A1220E158E000386DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2562806E200E0D64002FE630 /* Hype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hype.framework; sourceTree = "<group>"; };
+		25B5135E20E12CB100EA17FE /* hypelabs_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hypelabs_logo.png; path = Assets.xcassets/hypelabs_logo.png; sourceTree = "<group>"; };
 		9CA9487E1EB33D9B00E0CE7B /* HypeChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA948811EB33D9B00E0CE7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CA948861EB33D9B00E0CE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CA948881EB33D9B00E0CE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CA9488B1EB33D9B00E0CE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CA9488D1EB33D9B00E0CE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,9 +128,10 @@
 		9CA948801EB33D9B00E0CE7B /* HypeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				25334A1120E158E000386DC0 /* Main.storyboard */,
 				9CA948811EB33D9B00E0CE7B /* AppDelegate.swift */,
-				9CA948851EB33D9B00E0CE7B /* Main.storyboard */,
 				9CA948881EB33D9B00E0CE7B /* Assets.xcassets */,
+				25B5135E20E12CB100EA17FE /* hypelabs_logo.png */,
 				9CA9488A1EB33D9B00E0CE7B /* LaunchScreen.storyboard */,
 				9CA9488D1EB33D9B00E0CE7B /* Info.plist */,
 				9CA948AF1EB33DBF00E0CE7B /* ContactViewController.swift */,
@@ -223,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Rafael Soares";
 				TargetAttributes = {
 					9CA9487D1EB33D9B00E0CE7B = {
@@ -273,9 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B5135F20E12CB100EA17FE /* hypelabs_logo.png in Resources */,
 				9CA9488C1EB33D9B00E0CE7B /* LaunchScreen.storyboard in Resources */,
 				9CA948891EB33D9B00E0CE7B /* Assets.xcassets in Resources */,
-				9CA948871EB33D9B00E0CE7B /* Main.storyboard in Resources */,
+				25334A1320E158E000386DC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +346,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CA948851EB33D9B00E0CE7B /* Main.storyboard */ = {
+		25334A1120E158E000386DC0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CA948861EB33D9B00E0CE7B /* Base */,
+				25334A1220E158E000386DC0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -375,6 +379,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -382,6 +387,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -392,6 +398,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -432,6 +439,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -439,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -449,6 +458,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

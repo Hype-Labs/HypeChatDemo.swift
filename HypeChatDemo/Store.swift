@@ -39,9 +39,14 @@ class Store {
         lastReadIndex = 0
     }
     
-    func add(_ message: HYPMessage) {
+    func add(_ message: HYPMessage, isMessageReceived: Bool) {
         
         messages.append(message)
+        
+        if (!isMessageReceived && self.lastReadIndex == self.messages.count-1) {
+            self.lastReadIndex = self.messages.count // Avoid NewContent indicator to be activated when the message to be added to the store was sent by this instance
+        }
+        
         delegate?.didAdd(sender:self, message: message)
     }
     
