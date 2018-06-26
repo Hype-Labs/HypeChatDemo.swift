@@ -228,8 +228,13 @@ class ContactViewController:  UIViewController, UITableViewDelegate, UITableView
         // each peer putting an "announcement" on the network that helps identifying the
         // running instance.
         (cell as? ContactTableViewCell)?.displayName.text = store.instance.stringIdentifier
-        (cell as? ContactTableViewCell)?.details.text = String(data: store.instance.announcement, encoding: .utf8)
         (cell as? ContactTableViewCell)?.contentIndicator.isHidden = !store.hasNewMessages()
+        if (store.instance.announcement != nil) {
+            (cell as? ContactTableViewCell)?.details.text = String(data: store.instance.announcement, encoding: .utf8)
+        }
+        else {
+            (cell as? ContactTableViewCell)?.details.text = ""; // if no announcement is specified nothing is shown
+        }
 
         return cell!
     }
@@ -248,7 +253,13 @@ class ContactViewController:  UIViewController, UITableViewDelegate, UITableView
 
         // Pass the store along when the segue executes
         vc?.store = (sender as! ContactTableViewCell).store!
-        vc?.instanceIdentifier?.text = vc?.store?.instance.stringIdentifier
+        
+        if (vc?.store?.instance.announcement != nil) {
+            vc?.instanceAnnouncement?.text = String(data: (vc!.store!.instance.announcement)!, encoding: .utf8)
+        }
+        else {
+            vc?.instanceAnnouncement?.text = "" // if no announcement is specified nothing is shown
+        }
     }
     
     func updateHypeInstancesLabel()

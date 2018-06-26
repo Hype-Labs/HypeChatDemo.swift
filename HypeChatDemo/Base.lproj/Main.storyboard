@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="158.5" width="375" height="462.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MessageTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageTableViewCell" id="Ju6-x5-s4P" customClass="MessageTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MessageTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageTableViewCell" id="Ju6-x5-s4P" customClass="MessageTableViewCell" customModule="HypeChatDemo">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ju6-x5-s4P" id="2TZ-Ja-nWi">
@@ -88,7 +88,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="didTapSendButton:" destination="cRR-py-7kc" eventType="touchUpInside" id="u7P-Uw-y6j"/>
+                                            <action selector="didTapSendButton:" destination="cRR-py-7kc" eventType="touchUpInside" id="G1Z-Kw-wxm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -137,9 +137,9 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="instanceAnnouncement" destination="p2o-tQ-VT3" id="m0w-rB-to9"/>
-                        <outlet property="messageDisplay" destination="RfX-sq-K4G" id="4ai-cc-w7M"/>
-                        <outlet property="textView" destination="YCy-Id-YW9" id="WUf-LY-BFV"/>
+                        <outlet property="instanceAnnouncement" destination="p2o-tQ-VT3" id="Ltu-5a-XOy"/>
+                        <outlet property="messageDisplay" destination="RfX-sq-K4G" id="SxZ-Jy-caN"/>
+                        <outlet property="textView" destination="YCy-Id-YW9" id="JO9-qc-rQd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lO-1g-oKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -173,7 +173,7 @@
                                 <rect key="frame" x="0.0" y="171" width="375" height="454"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ContactTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="100" id="lUX-kn-niQ" userLabel="ContactTableViewCell" customClass="ContactTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ContactTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="100" id="lUX-kn-niQ" userLabel="ContactTableViewCell" customClass="ContactTableViewCell" customModule="HypeChatDemo">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lUX-kn-niQ" id="QsM-hh-9dk">
@@ -221,7 +221,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="avatarImage" destination="4Hw-T0-znQ" id="clS-tq-WB7"/>
+                                            <outlet property="avatarImage" destination="4Hw-T0-znQ" id="TSa-U8-2Jk"/>
                                             <outlet property="contentIndicator" destination="gh2-9F-OvN" id="oIW-Sd-T9M"/>
                                             <outlet property="details" destination="FhI-hH-woE" id="Ao5-rY-WoX"/>
                                             <outlet property="displayName" destination="WCc-0a-lhg" id="tpp-ln-qlw"/>

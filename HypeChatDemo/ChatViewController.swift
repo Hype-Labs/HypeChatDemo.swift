@@ -27,8 +27,6 @@ import Hype
 
 class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate{
     
-    @IBOutlet weak var instanceAnnouncement: UILabel!
-    
     private var _store:Store?
     
     var store: Store? {
@@ -43,13 +41,12 @@ class ChatViewController: UIViewController, UITableViewDataSource, StoreDelegate
         }
     }
     
-    @IBOutlet weak var instanceIdentifier: UILabel!
+    @IBOutlet weak var instanceAnnouncement: UILabel!
     @IBOutlet weak var messageDisplay: UITableView!
     @IBOutlet weak var textView: UITextField!
-    @objc(keyboardWillHideWithNotification:)
     
-    @IBAction func didTapSendButton(_ sender: Any) {
-        
+    @IBAction func didTapSendButton(_ sender: Any)
+    {
         let text: String = textView.text!
         
         if (text.count) > 0 {
